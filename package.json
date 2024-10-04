@@ -1,5 +1,5 @@
 {
-  "name": "@yek-plu/strapi-crack",
+  "name": "@yek-plus/strapi-crack",
   "version": "1.0.0",
   "main": "dist/index.js",
   "bin": {
@@ -25,7 +25,7 @@
     "posttest": "npm run lint",
     "develop": "npx nodemon --watch src --exec npx ts-node src/index.ts"
   },
-  "author": "yek-plus",
+  "author": "ss",
   "license": "ISC",
   "description": "Technical testing tool for Strapi Enterprise Edition license bypass. Not intended for production use.",
   "dependencies": {
@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YEK-PLUS/strapi-crack.git"
+    "url": "git+https://github.com/sS/strapi-crack.git"
   },
   "bugs": {
-    "url": "https://github.com/YEK-PLUS/strapi-crack/issues"
+    "url": "https://github.com/sS/strapi-crack/issues"
   },
-  "homepage": "https://github.com/YEK-PLUS/strapi-crack#readme"
+  "homepage": "https://github.com/sS/strapi-crack#readme"
 }
