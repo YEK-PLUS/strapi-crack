@@ -1,6 +1,6 @@
 {
   "name": "@yek-plus/strapi-crack",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "dist/index.js",
   "bin": {
     "strapi-crack": "dist/index.js"
