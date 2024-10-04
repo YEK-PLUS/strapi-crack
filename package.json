@@ -24,8 +24,8 @@
     "pretest": "npm run compile",
     "posttest": "npm run lint",
     "develop": "npx nodemon --watch src --exec npx ts-node src/index.ts",
-    "prepublish:npm": "npm version patch",
-    "prepublish:github": "npm version patch",
+    "patch": "npm version patch",
+    "publish": "npm run patch && npm run publish:npm && npm run publish:github",
     "publish:npm": "npm publish --@yek-plus:registry=https://registry.npmjs.org",
     "publish:github": "npm publish --@yek-plus:registry=https://npm.pkg.github.com"
   },
