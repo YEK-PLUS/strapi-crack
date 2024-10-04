@@ -1,7 +1,6 @@
 # @yek-plus/strapi-crack
 
-> **WARNING** 
-> This project is only for technique testing, DO NOT use this package in any production environment!
+> :warning: This project is only for technique testing, DO NOT use this package in any production environment!
 
 Usage:
 ``` shell
@@ -23,5 +22,4 @@ To run this package automatically, you can modify your package.json file.
 }
 ```
 
-> **NOTE** 
-> Thank to [iopanda](https://github.com/iopanda)
+> :pray: Thank to [iopanda](https://github.com/iopanda)
