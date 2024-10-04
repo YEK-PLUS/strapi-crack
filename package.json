@@ -44,5 +44,9 @@
   "bugs": {
     "url": "https://github.com/YEK-PLUS/strapi-crack/issues"
   },
-  "homepage": "https://github.com/YEK-PLUS/strapi-crack#readme"
+  "homepage": "https://github.com/YEK-PLUS/strapi-crack#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
