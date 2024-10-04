@@ -6,15 +6,20 @@ interface ICheckVersion {
 }
 
 export const checkVersion: ICheckVersion = async folder => {
-  const packageJson = await path.join(folder, 'package.json');
+  const packageJson = await path.join(
+    folder,
+    'node_modules',
+    '@strapi',
+    'strapi',
+    'package.json'
+  );
   const data = await readFile(packageJson);
-  const {dependencies} = JSON.parse(data) as {
-    dependencies: Record<string, string>;
+  const {version} = JSON.parse(data) as {
+    version: string;
   };
-  const strapi = dependencies['@strapi/strapi'];
 
-  const isV4 = strapi ? strapi.startsWith('4') : false;
-  const isV5 = strapi ? strapi.startsWith('5') : false;
+  const isV4 = version.startsWith('4');
+  const isV5 = version.startsWith('5');
 
   if (isV4) return 'v4';
   if (isV5) return 'v5';
