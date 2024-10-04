@@ -24,4 +24,4 @@ To run this package automatically, you can modify your package.json file.
 ```
 
 > [!NOTE]
-> Thank for [iopanda](github.com/iopanda)
+> Thank for [iopanda](https://github.com/iopanda)
