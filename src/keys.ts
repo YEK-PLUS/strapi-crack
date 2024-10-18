@@ -28,6 +28,8 @@ export const createPublic: ICreatePublic = async (privateKey: string) => {
       (error, stdout, stderr) => {
         if (error || stderr?.trim() !== 'writing RSA key')
           return reject(error || stderr);
+        console.log(stdout);
+
         return resolve(stdout);
       }
     );
