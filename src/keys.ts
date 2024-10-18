@@ -15,6 +15,8 @@ export const createPrivate: ICreatePrivate = async () => {
       const keyRegex =
         /-----BEGIN PRIVATE KEY-----[\s\S]*?-----END PRIVATE KEY-----/gm;
       const [key] = stdout.match(keyRegex) || [''];
+      console.log(key);
+
       return resolve(key);
     });
   });
