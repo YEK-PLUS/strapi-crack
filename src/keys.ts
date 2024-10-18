@@ -10,9 +10,12 @@ interface ICreatePublic {
 
 export const createPrivate: ICreatePrivate = async () => {
   const privateKey = await new Promise<string>((resolve, reject) => {
-    exec('openssl genpkey -algorithm RSA -quiet', (error, stdout, stderr) => {
+    exec('openssl genpkey -algorithm RSA', (error, stdout, stderr) => {
       if (error || stderr) return reject(error || stderr);
-      return resolve(stdout);
+      const keyRegex =
+        /-----BEGIN PRIVATE KEY-----[\s\S]*?-----END PRIVATE KEY-----/gm;
+      const [key] = stdout.match(keyRegex) || [''];
+      return resolve(key);
     });
   });
   return privateKey;
