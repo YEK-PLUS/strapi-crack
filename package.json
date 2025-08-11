@@ -33,7 +33,7 @@
   "license": "ISC",
   "description": "Technical testing tool for Strapi Enterprise Edition license bypass. Not intended for production use.",
   "dependencies": {
-    "yargs": "^17.7.2"
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@types/node": "24.2.1",
